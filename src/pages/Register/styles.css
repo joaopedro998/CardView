@@ -1,0 +1,91 @@
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  background-image: url('../../assets/images/fundotcg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.register-container form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  width: 95%;
+  max-width: 600px; /* 👈 aumentei aqui */
+  margin: 1rem;
+  backdrop-filter: blur(2px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-container form h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+  width: 100%;
+}
+
+.register-container input {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.register-container input:focus {
+  border-color: #f52121;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}
+
+.register-container button {
+  background-color: #f52121;
+  color: white;
+  padding: 0.85rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 1rem;
+  width: 60%;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.register-container button:hover {
+  background-color: #dc2626;
+  transform: translateY(-2px);
+}
+
+.register-container button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+  .register-container form {
+    padding: 1.5rem;
+    width: 85%;
+  }
+
+  .register-container form h2 {
+    font-size: 1.5rem;
+  }
+}
