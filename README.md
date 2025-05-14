@@ -2,18 +2,50 @@
 
 ## Descrição
 
-Este projeto é responsável por exibir as cartas de cada jogador em um jogo de cartas de Pokémon. A aplicação consulta serviços de distribuição de cartas e de jogadores para recuperar as informações necessárias sobre os jogadores e suas cartas. Além disso, a aplicação consulta a PokéAPI para recuperar as informações necessárias sobre os Pokémons.
+Este projeto é responsável por exibir as cartas de cada jogador em um jogo de cartas de Pokémon. A aplicação consulta serviços de distribuição de cartas e de jogadores para recuperar as informações necessárias sobre os jogadores e suas cartas. Além disso, a aplicação consulta a PokéAPI para recuperar as informações necessárias sobre os Pokémon.
 
 ## Funcionalidades
 
 - **Consulta de Jogadores:** Recupera informações sobre os jogadores.
 - **Consulta de Cartas:** Consulta o serviço de distribuição de cartas para obter as cartas de cada jogador.
-- **Consulta de Pokémons:** Utiliza a PokéAPI para obter informações detalhadas sobre os Pokémons nas cartas.
+- **Consulta de Pokémons:** Utiliza a PokéAPI para obter informações detalhadas sobre os Pokémon nas cartas.
 - **Exibição de Cartas:** Exibe as cartas de cada jogador com as informações obtidas.
 
 ## Tecnologias Utilizadas
 - **Front-end:** React
 - **APIs:** PokéAPI
+
+## Estrutura de Pastas
+
+Abaixo está a organização das pastas e arquivos do projeto **CardView**:
+
+```bash
+CARDVIEW/
+├── node_modules/                # Dependências do projeto
+├── public/                      # Arquivos públicos (favicon, index.html, etc.)
+├── src/                         # Código-fonte da aplicação
+│   ├── api/                     # Funções para comunicação com a API
+│   ├── assets/                  # Imagens e recursos estáticos
+│   ├── auth/                    # Lógica de autenticação
+│   ├── components/              # Componentes reutilizáveis da interface
+│   │   ├── Details/             # Detalhes dos pokémon
+│   │   ├── NotificationBell/    # Componente de notificações
+│   │   ├── PokemonCard/         # Componente de exibição de cartas Pokémon
+│   │   └── TradeModal/          # Componente modal para trocas
+│   ├── pages/                   # Páginas principais da aplicação
+│   │   ├── Collection/          # Página da coleção de cartas do jogador
+│   │   ├── Login/               # Página de login
+│   │   └── Register/            # Página de cadastro
+│   ├── App.css                  # Estilos globais do App
+│   ├── App.js                   # Componente principal da aplicação
+│   ├── index.css                # Estilos globais do index
+│   ├── index.js                 # Ponto de entrada da aplicação React
+│   └── reportWebVitals.js       # Métricas de performance
+├── .gitignore                   # Arquivos e pastas ignorados pelo Git
+├── package-lock.json            # Lockfile do npm
+├── package.json                 # Informações e dependências do projeto
+└── README.md                    # Documentação do projeto
+```
 
 ## UML
 ### Fluxograma
